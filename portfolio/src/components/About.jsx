@@ -29,8 +29,8 @@ const About = () => {
                     </div>
 
                     {/* Image 1 (Primary) */}
-                    <div className="bento-card bento-img-wrapper" style={{ gridColumn: 'span 4', gridRow: 'span 2', padding: 0 }}>
-                        <img src={my_story_1} alt={t('about.tag')} className="about-grid-img" />
+                    <div className="bento-card" style={{ gridColumn: 'span 4', gridRow: 'span 2', padding: 0, overflow: 'hidden' }}>
+                        <img src={my_story_1} alt={t('about.tag')} style={{ width: '100%', height: '100%', minHeight: '100%', objectFit: 'cover', aspectRatio: '3/4', display: 'block', borderRadius: 'var(--radius-lg)' }} />
                     </div>
 
                     {/* Experience Highlights */}
@@ -59,13 +59,13 @@ const About = () => {
                     </div>
 
                     {/* Image 2 */}
-                    <div className="bento-card bento-img-wrapper" style={{ gridColumn: 'span 4', gridRow: 'span 2', padding: 0 }}>
-                        <img src={my_story_2} alt={t('about.tag')} className="about-grid-img" />
+                    <div className="bento-card" style={{ gridColumn: 'span 4', gridRow: 'span 2', padding: 0, overflow: 'hidden' }}>
+                        <img src={my_story_2} alt={t('about.tag')} style={{ width: '100%', height: '100%', minHeight: '100%', objectFit: 'cover', aspectRatio: '1/1', display: 'block', borderRadius: 'var(--radius-lg)' }} />
                     </div>
 
                     {/* Image 3 */}
-                    <div className="bento-card bento-img-wrapper" style={{ gridColumn: 'span 4', gridRow: 'span 2', padding: 0 }}>
-                        <img src={my_story_3} alt={t('about.tag')} className="about-grid-img" />
+                    <div className="bento-card" style={{ gridColumn: 'span 4', gridRow: 'span 2', padding: 0, overflow: 'hidden' }}>
+                        <img src={my_story_3} alt={t('about.tag')} style={{ width: '100%', height: '100%', minHeight: '100%', objectFit: 'cover', aspectRatio: '1/1', display: 'block', borderRadius: 'var(--radius-lg)' }} />
                     </div>
 
                     {/* Mission Card */}
@@ -86,20 +86,6 @@ const About = () => {
             </div>
 
             <style>{`
-                .bento-img-wrapper {
-                    position: relative;
-                    overflow: hidden;
-                    border: none;
-                }
-                .about-grid-img {
-                    position: absolute;
-                    inset: 0;
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                    display: block;
-                    border-radius: var(--radius-lg);
-                }
                 @media (max-width: 1024px) {
                     .about-bento-grid {
                         grid-template-columns: 1fr !important;
@@ -114,14 +100,6 @@ const About = () => {
                     .mission-card, .languages-card {
                         padding: 1.25rem !important;
                         min-height: auto !important;
-                    }
-                    .bento-img-wrapper {
-                        min-height: 400px !important;
-                        height: 400px !important;
-                        padding: 0 !important;
-                    }
-                    .about-grid-img {
-                        border-radius: 24px !important;
                     }
                 }
             `}</style>

@@ -16,7 +16,7 @@ const Specialization = () => {
     const timeline = t('toolkit.journey_list') || [];
 
     return (
-        <section id="services" style={{ padding: '4rem 0', backgroundColor: 'var(--secondary-bg)' }}>
+        <section id="services" style={{ padding: '2.5rem 0', backgroundColor: 'var(--secondary-bg)' }}>
             <div className="container">
 
                 {/* Section Header */}

@@ -32,7 +32,7 @@ const Testimonials = () => {
     };
 
     return (
-        <section id="testimonials" style={{ padding: '6rem 0', backgroundColor: '#F8FAFC', overflow: 'hidden' }}>
+        <section id="testimonials" style={{ padding: '4rem 0', backgroundColor: '#F8FAFC', overflow: 'hidden' }}>
             <div className="container" style={{ position: 'relative' }}>
                 <div style={{ textAlign: 'center', marginBottom: '4rem' }}>
                     <div className="pill-tag tag-purple" style={{ marginBottom: '1.5rem' }}>{t('reviews.tag')}</div>
@@ -126,7 +126,7 @@ const Testimonials = () => {
                     button[onClick*="nextSlide"] { right: 35% !important; left: auto !important; }
                     
                     #testimonials h2 { font-size: 1.85rem !important; }
-                    #testimonials { padding: 4rem 0 !important; padding-bottom: 7rem !important; }
+                    #testimonials { padding: 3rem 0 !important; padding-bottom: 5rem !important; }
                     .bento-card { margin: 0 !important; border-radius: 24px !important; }
                 }
             `}</style>

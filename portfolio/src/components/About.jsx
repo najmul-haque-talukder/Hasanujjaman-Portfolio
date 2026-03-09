@@ -8,7 +8,7 @@ const About = () => {
     const { t } = useLanguage();
 
     return (
-        <section id="about" style={{ padding: '6rem 0', backgroundColor: 'white' }}>
+        <section id="about" style={{ padding: '4rem 0', backgroundColor: 'white' }}>
             <div className="container">
                 <div style={{ display: 'grid', gridTemplateColumns: 'repeat(12, 1fr)', gridAutoRows: 'minmax(180px, auto)', gap: '1.25rem' }} className="about-bento-grid">
 

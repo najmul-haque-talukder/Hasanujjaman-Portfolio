@@ -10,7 +10,7 @@ const Footer = () => {
 
     return (
         <>
-            <footer style={{ backgroundColor: '#F9FAFB', padding: '5rem 0 3rem' }}>
+            <footer style={{ backgroundColor: '#F9FAFB', padding: '3rem 0 2rem' }}>
                 <div className="container footer-grid-container" style={{
                     display: 'grid',
                     gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',

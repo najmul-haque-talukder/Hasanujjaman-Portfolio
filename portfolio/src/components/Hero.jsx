@@ -7,7 +7,7 @@ const Hero = () => {
     const { t } = useLanguage();
 
     return (
-        <section id="home" className="glow-wrapper" style={{ padding: '4rem 0 2rem', position: 'relative' }}>
+        <section id="home" className="glow-wrapper" style={{ padding: '3rem 0 1rem', position: 'relative' }}>
             <div className="glow-top-left"></div>
 
             <div className="container" style={{ textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '2.5rem' }}>
@@ -115,10 +115,11 @@ const Hero = () => {
                     .exp-badge {
                         right: 50% !important;
                         transform: translateX(50%) !important;
-                        bottom: -30px !important;
+                        bottom: -50px !important;
                         padding: 1.25rem !important;
                         min-width: 180px !important;
                         text-align: center !important;
+                        z-index: 10 !important;
                     }
                     .exp-badge p { text-align: center !important; }
                     .exp-badge h3 { font-size: 1.35rem !important; }
@@ -129,7 +130,7 @@ const Hero = () => {
                         height: 320px !important; 
                     }
                     .exp-badge {
-                        bottom: -40px !important;
+                        bottom: -70px !important;
                     }
                 }
             `}</style>

@@ -15,7 +15,7 @@ const Portfolio = () => {
     const { t, language } = useLanguage();
 
     return (
-        <section id="portfolio" style={{ padding: '4rem 0', backgroundColor: 'var(--secondary-bg)' }}>
+        <section id="portfolio" style={{ padding: '2.5rem 0', backgroundColor: 'var(--secondary-bg)' }}>
             <div className="container">
 
                 {/* Section Header */}

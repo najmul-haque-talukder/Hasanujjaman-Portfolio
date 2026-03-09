@@ -32,7 +32,7 @@ const ToolkitAndEducation = () => {
     const [eduH1, eduH2] = splitTitle('toolkit.edu_headline');
 
     return (
-        <section id="toolkit-education" style={{ padding: '6rem 0', backgroundColor: 'var(--primary-bg)' }}>
+        <section id="toolkit-education" style={{ padding: '4rem 0', backgroundColor: 'var(--primary-bg)' }}>
             <div className="container">
                 <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))', gap: '4rem' }}>
 

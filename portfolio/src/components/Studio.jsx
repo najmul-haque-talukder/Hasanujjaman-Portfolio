@@ -16,7 +16,7 @@ const Studio = () => {
     const specs = t('toolkit.studio.specs') || [];
 
     return (
-        <section id="studio" style={{ padding: '8rem 0', backgroundColor: 'var(--accent-black)', color: 'white', overflow: 'hidden' }}>
+        <section id="studio" style={{ padding: '4rem 0', backgroundColor: 'var(--accent-black)', color: 'white', overflow: 'hidden' }}>
             <div className="container">
                 <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '4rem', alignItems: 'center' }}>
 

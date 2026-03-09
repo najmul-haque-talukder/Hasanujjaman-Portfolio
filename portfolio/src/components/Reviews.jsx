@@ -16,7 +16,7 @@ const Reviews = () => {
     ];
 
     return (
-        <section id="reviews" style={{ padding: '8rem 0', backgroundColor: 'var(--primary-bg)', overflow: 'hidden', position: 'relative' }}>
+        <section id="reviews" style={{ padding: '4rem 0', backgroundColor: 'var(--primary-bg)', overflow: 'hidden', position: 'relative' }}>
             {/* Background Decorative Element */}
             <div style={{ position: 'absolute', top: '10%', left: '50%', transform: 'translateX(-50%)', width: '800px', height: '800px', background: 'radial-gradient(circle, rgba(168, 85, 247, 0.03) 0%, transparent 70%)', pointerEvents: 'none', zIndex: 0 }}></div>
 

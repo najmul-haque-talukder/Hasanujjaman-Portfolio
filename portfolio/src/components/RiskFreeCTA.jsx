@@ -6,7 +6,7 @@ const RiskFreeCTA = () => {
     const { t } = useLanguage();
 
     return (
-        <section style={{ padding: '3rem 0', backgroundColor: 'var(--secondary-bg)' }}>
+        <section style={{ padding: '2rem 0', backgroundColor: 'var(--secondary-bg)' }}>
             <div className="container">
                 <div style={{ backgroundColor: 'white', borderRadius: '32px', padding: '2.5rem 1.5rem', textAlign: 'center', boxShadow: 'var(--shadow-lg)', border: '1px solid rgba(0,0,0,0.01)' }}>
                     <div style={{ maxWidth: '600px', margin: '0 auto' }}>

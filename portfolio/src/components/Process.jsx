@@ -12,7 +12,7 @@ const Process = () => {
     ];
 
     return (
-        <section id="process" style={{ padding: '4rem 0', backgroundColor: 'white' }}>
+        <section id="process" style={{ padding: '2.5rem 0', backgroundColor: 'white' }}>
             <div className="container">
                 <div style={{ textAlign: 'center', marginBottom: '4rem' }}>
                     <div className="pill-tag tag-blue" style={{ marginBottom: '1.5rem' }}>{t('process.tag')}</div>

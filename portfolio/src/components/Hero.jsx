@@ -53,23 +53,23 @@ const Hero = () => {
                         zIndex: 1,
                         backgroundColor: 'var(--accent-blue)',
                         width: 'clamp(300px, 50vw, 550px)',
-                        height: 'clamp(400px, 65vw, 700px)',
+                        height: 'clamp(350px, 60vw, 650px)', // Slightly reduced height to let image overflow bottom
                         borderRadius: '300px 300px 32px 32px',
                         border: '1px solid rgba(255, 255, 255, 0.1)',
                         display: 'flex',
                         alignItems: 'flex-end',
                         justifyContent: 'center',
                         overflow: 'visible',
-                        paddingBottom: '1px' // Elevates the image 1px from the bottom edge
+                        marginBottom: '40px' // Offset the overlap space
                     }}>
                         <img
                             src={authorImg}
                             alt="MD Hasanujjaman"
                             style={{
-                                height: '100%',
+                                height: 'calc(100% + 50px)', // Make image taller than arch
                                 width: 'auto',
                                 maxWidth: 'none',
-                                marginBottom: '0',
+                                marginBottom: '-50px', // Pull it down to cover the arch's bottom
                                 display: 'block',
                                 position: 'relative',
                                 zIndex: 2

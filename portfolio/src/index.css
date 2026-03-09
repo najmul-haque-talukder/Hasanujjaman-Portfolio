@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Playfair+Display:ital,wght@1,400;1,700;1,800&family=Hind+Siliguri:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --primary-bg: #FFFFFF;
+  --secondary-bg: #F8FAFC;
+  --text-main: #0F172A;
+  --text-muted: #64748B;
+
+  --accent-blue: #6366F1;
+  --accent-blue-dark: #4F46E5;
+  --accent-purple: #A855F7;
+  --accent-green: #22C55E;
+  --accent-black: #0F172A;
+
+  --card-bg: #FFFFFF;
+  --card-border: rgba(0, 0, 0, 0.04);
+
+  --font-primary: 'Plus Jakarta Sans', sans-serif;
+  --font-bangla: 'Hind Siliguri', sans-serif;
+  --font-serif: 'Playfair Display', serif;
+
+  --radius-lg: 32px;
+  --radius-md: 16px;
+  --shadow-sm: 0 4px 20px rgba(0, 0, 0, 0.03);
+  --shadow-md: 0 10px 40px rgba(0, 0, 0, 0.05);
+
+  font-family: var(--font-primary);
+  line-height: 1.6;
+  font-weight: 450;
+
+  color-scheme: light;
+  color: var(--text-main);
+  background-color: var(--primary-bg);
+  text-rendering: optimizeLegibility;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background-color: var(--accent-blue);
+  color: white;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--primary-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #E5E7EB;
+  border-radius: 999px;
+  border: 3px solid var(--primary-bg);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #D1D5DB;
+}
+
+body {
+  background-color: var(--primary-bg);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: var(--font-primary);
+}
+
+/* Strict font application for Bangla */
+body.lang-bn,
+body.lang-bn *,
+body.lang-bn button,
+body.lang-bn input,
+body.lang-bn select,
+body.lang-bn textarea {
+  font-family: var(--font-bangla) !important;
+}
+
+/* Preserve Serif Italic */
+.serif-italic {
+  font-family: var(--font-serif) !important;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.bento-card {
+  background: white;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--card-border);
+  padding: 1.5rem;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: var(--shadow-sm);
+  position: relative;
+  overflow: hidden;
+}
+
+.bento-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+  border-color: rgba(99, 102, 241, 0.1);
+}
+
+body.lang-bn .serif-italic {
+  font-family: var(--font-bangla) !important;
+  font-style: normal;
+}
+
+/* Container */
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 clamp(1.5rem, 6vw, 4rem);
+  /* Increased minimum padding */
+}
+
+/* Typography Scale - Fluid */
+.text-hero {
+  font-size: clamp(2.25rem, 9vw, 5.5rem);
+  /* Slightly smaller mobile hero */
+  font-weight: 800;
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+}
+
+.text-section {
+  font-size: clamp(1.85rem, 6vw, 3.5rem);
+  /* Slightly smaller mobile section */
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+}
+
+.text-card-title {
+  font-size: clamp(1.15rem, 3.5vw, 1.75rem);
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --radius-lg: 24px;
+  }
+}
+
+/* Pill Button Base */
+.btn-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1.25rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  border: none;
+}
+
+.btn-blue {
+  background-color: var(--accent-blue);
+  color: white;
+}
+
+.btn-black {
+  background-color: var(--accent-black);
+  color: white;
+}
+
+.btn-white {
+  background-color: white;
+  color: var(--accent-black);
+  border: 1px solid var(--card-border);
+}
+
+.btn-pill:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+/* Utility: Background Glows */
+.glow-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.glow-top-left {
+  position: absolute;
+  top: -20%;
+  left: -10%;
+  width: 60%;
+  height: 60%;
+  background: radial-gradient(circle, rgba(79, 70, 229, 0.08) 0%, rgba(247, 247, 247, 0) 70%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Utility: Tags */
+.pill-tag {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.tag-purple {
+  background: #F5EEFF;
+  color: var(--accent-purple);
+}
+
+.tag-orange {
+  background: #FFF4ED;
+  color: var(--accent-orange);
+}
+
+.tag-green {
+  background: #F0F9E8;
+  color: var(--accent-green);
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.8s ease-out forwards;
+}

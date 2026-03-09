@@ -1,0 +1,90 @@
+[
+    {
+        "id": 1,
+        "name": "Michael Chen",
+        "role": "CEO, TechFlow",
+        "avatar": "https://i.pravatar.cc/150?u=1",
+        "text": {
+            "en": "Hasanujjaman is a true professional. His motion graphics transformed our brand identity completely. Strategic, fast, and incredibly talented.",
+            "bn": "হাসানুজ্জামান একজন খাঁটি পেশাদার। তার মোশন গ্রাফিক্স আমাদের ব্র্যান্ড আইডেন্টিটিকে সম্পূর্ণ বদলে দিয়েছে। কৌশলগত, দ্রুত এবং অবিশ্বাস্য প্রতিভাবান।",
+            "jp": "Hasanujjamanは真のプロフェッショナルです。彼のモーショングラフィックスは私たちのブランドアイデンティティを完全に変えてくれました。戦略的で速く、信じられないほど才能があります。"
+        }
+    },
+    {
+        "id": 2,
+        "name": "Sarah Jenkins",
+        "role": "Marketing Director",
+        "avatar": "https://i.pravatar.cc/150?u=2",
+        "text": {
+            "en": "The attention to detail in his video editing is unmatched. He understands the rhythm of storytelling and brings a unique creative edge to every project.",
+            "bn": "ভিডিও এডিটিংয়ে তার খুঁটিনাটি বিষয়ের প্রতি নজর অতুলনীয়। তিনি গল্পের ছন্দ বোঝেন এবং প্রতিটি প্রজেক্টে একটি অনন্য সৃজনশীলতা নিয়ে আসেন।",
+            "jp": "ビデオ編集における細部へのこだわりは比類がありません。ストーリーテリングのリズムを理解しており、すべてのプロジェクトに独自のクリエイティブなエッジをもたらしてくれます。"
+        }
+    },
+    {
+        "id": 3,
+        "name": "David Miller",
+        "role": "Freelance Producer",
+        "avatar": "https://i.pravatar.cc/150?u=3",
+        "text": {
+            "en": "Working with Hasan has been a breeze. He takes feedback perfectly and always delivers more than what was expected. Highly recommended!",
+            "bn": "হাসানের সাথে কাজ করা খুব সহজ ছিল। তিনি ফিডব্যাক খুব ভালোভাবে নেন এবং সবসময় প্রত্যাশার চেয়ে বেশি ডেলিভারি দেন। হাইলি রেকমেন্ডেড!",
+            "jp": "Hasanとの仕事はとてもスムーズでした。フィードバックを完璧に受け入れ、常に期待以上のものを納品してくれます。強くお勧めします！"
+        }
+    },
+    {
+        "id": 4,
+        "name": "Emily Watts",
+        "role": "Content Head, Streamly",
+        "avatar": "https://i.pravatar.cc/150?u=4",
+        "text": {
+            "en": "One of the best video editors I have worked with. The turnaround time is amazing without compromising on the quality.",
+            "bn": "আমি যাদের সাথে কাজ করেছি তাদের মধ্যে অন্যতম সেরা ভিডিও এডিটর। কোয়ালিটির সাথে কোনো আপস না করেই তার কাজের গতি অসাধারণ।",
+            "jp": "これまで仕事をした中で最高のビデオエディターの一人です。品質を妥協することなく、ターンアラウンドタイムが素晴らしいです。"
+        }
+    },
+    {
+        "id": 5,
+        "name": "Robert Fox",
+        "role": "Founder, CloudScale",
+        "avatar": "https://i.pravatar.cc/150?u=5",
+        "text": {
+            "en": "His understanding of IT systems and motion design is a lethal combination. He created a technical explainer that was both dense and beautiful.",
+            "bn": "আইটি সিস্টেম এবং মোশন ডিজাইনের এই সমন্বয় দুর্দান্ত। তিনি এমন একটি টেকনিকিয়াল এক্সপ্লেইনার তৈরি করেছেন যা তথ্যবহুল এবং সুন্দর।",
+            "jp": "ITシステムとモーションデザインの理解の組み合わせは強力です。高密度でありながら美しいテクニカル・エクスプレイナーを作成してくれました。"
+        }
+    },
+    {
+        "id": 6,
+        "name": "Jessica Alba",
+        "role": "Creative Lead",
+        "avatar": "https://i.pravatar.cc/150?u=6",
+        "text": {
+            "en": "Clean designs, smooth animations, and a great eye for color. Hasan is our go-to for all our high-end marketing clips.",
+            "bn": "ক্লিন ডিজাইন, স্মুথ অ্যানিমেশন এবং রঙের নিখুঁত ব্যবহার। আমাদের সব হাই-এন্ড মার্কেটিং ক্লিপের জন্য হাসানই সেরা চয়েস।",
+            "jp": "クリーンなデザイン、スムーズなアニメーション、そして素晴らしい色彩感覚。Hasanは、私たちのハイエンドなマーケティングクリップの頼れる存在です。"
+        }
+    },
+    {
+        "id": 7,
+        "name": "Alex Rivera",
+        "role": "App Developer",
+        "avatar": "https://i.pravatar.cc/150?u=7",
+        "text": {
+            "en": "He helped me visualize my app features with stunning 2D animations. The process was smooth and the result was beyond expectation.",
+            "bn": "তিনি আমার অ্যাপ ফিচারের জন্য অসাধারণ ২ডি অ্যানিমেশন তৈরি করে দিয়েছেন। প্রক্রিয়াটি ছিল মসৃণ এবং ফলাফলটি ছিল প্রত্যাশার বাইরে।",
+            "jp": "Stunningな2Dアニメーションでアプリ機能を視覚化するのを助けてくれました。プロセスはスムーズで、結果は期待以上でした。"
+        }
+    },
+    {
+        "id": 8,
+        "name": "Linda Zhang",
+        "role": "Digital Strategist",
+        "avatar": "https://i.pravatar.cc/150?u=8",
+        "text": {
+            "en": "Professional, communicative, and extremely skilled. Hasan understands the business side of creative work, which is rare.",
+            "bn": "পেশাদার, যোগাযোগে দক্ষ এবং অত্যন্ত মেধাবী। হাসান সৃজনশীল কাজের ব্যবসায়িক দিকটিও বোঝেন, যা বিরল।",
+            "jp": "プロフェッショナルでコミュニケーション能力が高く、非常に熟練しています。Hasanはクリエイティブな仕事のビジネス面を理解しており、それは稀有なことです。"
+        }
+    }
+]

@@ -55,12 +55,12 @@ const Hero = () => {
                         width: 'clamp(300px, 50vw, 550px)',
                         height: 'clamp(400px, 65vw, 700px)',
                         borderRadius: '300px 300px 32px 32px',
-                        boxShadow: '0 30px 70px rgba(99, 102, 241, 0.2)',
                         border: '1px solid rgba(255, 255, 255, 0.1)',
                         display: 'flex',
                         alignItems: 'flex-end',
                         justifyContent: 'center',
-                        overflow: 'visible'
+                        overflow: 'visible',
+                        paddingBottom: '1px' // Elevates the image 1px from the bottom edge
                     }}>
                         <img
                             src={authorImg}
@@ -71,7 +71,6 @@ const Hero = () => {
                                 maxWidth: 'none',
                                 marginBottom: '0',
                                 display: 'block',
-                                filter: 'drop-shadow(0 20px 40px rgba(0,0,0,0.2))',
                                 position: 'relative',
                                 zIndex: 2
                             }}
@@ -81,7 +80,7 @@ const Hero = () => {
                         <div className="exp-badge" style={{
                             position: 'absolute',
                             bottom: '10%',
-                            right: '-15%',
+                            right: '-25%',
                             backgroundColor: 'black',
                             color: 'white',
                             padding: '1.75rem',
@@ -114,12 +113,15 @@ const Hero = () => {
                         margin-top: 2rem !important;
                     }
                     .exp-badge {
-                        right: -10px !important;
-                        bottom: 0px !important;
-                        padding: 1rem !important;
-                        min-width: 140px !important;
+                        right: 50% !important;
+                        transform: translateX(50%) !important;
+                        bottom: -30px !important;
+                        padding: 1.25rem !important;
+                        min-width: 180px !important;
+                        text-align: center !important;
                     }
-                    .exp-badge h3 { font-size: 1.25rem !important; }
+                    .exp-badge p { text-align: center !important; }
+                    .exp-badge h3 { font-size: 1.35rem !important; }
                 }
                 @media (max-width: 480px) {
                     .arch-bg { 
@@ -127,12 +129,7 @@ const Hero = () => {
                         height: 320px !important; 
                     }
                     .exp-badge {
-                        right: 50% !important;
-                        transform: translateX(50%) !important;
-                        bottom: -20px !important;
-                        padding: 1rem !important;
-                        min-width: 160px !important;
-                        text-align: center !important;
+                        bottom: -40px !important;
                     }
                 }
             `}</style>

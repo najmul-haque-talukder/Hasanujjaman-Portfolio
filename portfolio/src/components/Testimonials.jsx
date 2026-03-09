@@ -7,8 +7,21 @@ const Testimonials = () => {
     const { t, language } = useLanguage();
 
     const [currentIndex, setCurrentIndex] = useState(0);
-    const itemsToShow = 4;
-    const maxIndex = reviewsData.length - itemsToShow;
+    const [itemsToShow, setItemsToShow] = useState(4);
+
+    React.useEffect(() => {
+        const handleResize = () => {
+            if (window.innerWidth < 768) setItemsToShow(1);
+            else if (window.innerWidth < 1024) setItemsToShow(2);
+            else if (window.innerWidth < 1200) setItemsToShow(3);
+            else setItemsToShow(4);
+        };
+        handleResize();
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
+
+    const maxIndex = Math.max(0, reviewsData.length - itemsToShow);
 
     const nextSlide = () => {
         setCurrentIndex((prev) => (prev >= maxIndex ? 0 : prev + 1));
@@ -94,41 +107,26 @@ const Testimonials = () => {
 
             <style>{`
                 @media (max-width: 1200px) {
-                    /* Container for the slider */
                     div[style*="transform: translateX"] {
-                        transform: none !important;
-                        display: flex !important;
-                        overflow-x: auto !important;
-                        scroll-snap-type: x mandatory !important;
-                        padding-bottom: 2rem !important;
-                        scrollbar-width: thin;
-                        scrollbar-color: var(--accent-purple) transparent;
-                        -ms-overflow-style: auto;
-                        gap: 1.5rem !important;
-                        padding: 0 1.5rem !important;
-                        cursor: grab;
+                        gap: 0 !important;
                     }
-                    div[style*="transform: translateX"]::-webkit-scrollbar {
-                        display: block;
-                        height: 4px;
-                    }
-                    div[style*="transform: translateX"]::-webkit-scrollbar-thumb {
-                        background: var(--accent-purple);
-                        border-radius: 10px;
-                    }
-                    /* Individual Card wrapper */
                     div[style*="min-width: 25%"] {
-                        min-width: 85% !important; /* Allow partial next card visibility */
-                        scroll-snap-align: center !important;
-                        padding: 0 !important;
-                        flex-shrink: 0 !important;
+                        min-width: 100% !important; /* One card at a time on mobile */
+                        padding: 0 0.5rem !important;
                     }
-                    /* Move / Hide overlapping buttons */
+                    /* Ensure buttons are visible but scaled */
                     button[onClick*="Slide"] { 
-                        display: none !important; 
+                        width: 40px !important;
+                        height: 40px !important;
+                        top: auto !important;
+                        bottom: -15px !important;
+                        transform: translateY(100%) !important;
                     }
+                    button[onClick*="prevSlide"] { left: 35% !important; }
+                    button[onClick*="nextSlide"] { right: 35% !important; left: auto !important; }
+                    
                     #testimonials h2 { font-size: 1.85rem !important; }
-                    #testimonials { padding: 4rem 0 !important; }
+                    #testimonials { padding: 4rem 0 !important; padding-bottom: 7rem !important; }
                     .bento-card { margin: 0 !important; border-radius: 24px !important; }
                 }
             `}</style>

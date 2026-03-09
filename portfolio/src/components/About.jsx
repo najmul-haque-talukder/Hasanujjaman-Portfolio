@@ -29,8 +29,8 @@ const About = () => {
                     </div>
 
                     {/* Image 1 (Primary) */}
-                    <div className="bento-card bento-img-card" style={{ gridColumn: 'span 4', gridRow: 'span 2', padding: 0, overflow: 'hidden', position: 'relative' }}>
-                        <img src={my_story_1} alt={t('about.tag')} style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+                    <div className="bento-card bento-img-card" style={{ gridColumn: 'span 4', gridRow: 'span 2', padding: 0, overflow: 'hidden', display: 'flex', flexDirection: 'column' }}>
+                        <img src={my_story_1} alt={t('about.tag')} style={{ width: '100%', height: '100%', flexGrow: 1, objectFit: 'cover', display: 'block' }} />
                     </div>
 
                     {/* Experience Highlights */}
@@ -59,13 +59,13 @@ const About = () => {
                     </div>
 
                     {/* Image 2 */}
-                    <div className="bento-card bento-img-card" style={{ gridColumn: 'span 4', gridRow: 'span 2', padding: 0, overflow: 'hidden', position: 'relative' }}>
-                        <img src={my_story_2} alt={t('about.tag')} style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+                    <div className="bento-card bento-img-card" style={{ gridColumn: 'span 4', gridRow: 'span 2', padding: 0, overflow: 'hidden', display: 'flex', flexDirection: 'column' }}>
+                        <img src={my_story_2} alt={t('about.tag')} style={{ width: '100%', height: '100%', flexGrow: 1, objectFit: 'cover', display: 'block' }} />
                     </div>
 
                     {/* Image 3 */}
-                    <div className="bento-card bento-img-card" style={{ gridColumn: 'span 4', gridRow: 'span 2', padding: 0, overflow: 'hidden', position: 'relative' }}>
-                        <img src={my_story_3} alt={t('about.tag')} style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+                    <div className="bento-card bento-img-card" style={{ gridColumn: 'span 4', gridRow: 'span 2', padding: 0, overflow: 'hidden', display: 'flex', flexDirection: 'column' }}>
+                        <img src={my_story_3} alt={t('about.tag')} style={{ width: '100%', height: '100%', flexGrow: 1, objectFit: 'cover', display: 'block' }} />
                     </div>
 
                     {/* Mission Card */}

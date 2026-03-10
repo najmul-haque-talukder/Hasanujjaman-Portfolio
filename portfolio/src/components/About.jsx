@@ -29,9 +29,7 @@ const About = () => {
                     </div>
 
                     {/* Image 1 (Primary) */}
-                    <div className="bento-card" style={{ gridColumn: 'span 4', gridRow: 'span 2', padding: 0, overflow: 'hidden' }}>
-                        <img src={my_story_1} alt={t('about.tag')} style={{ width: '100%', height: '100%', minHeight: '100%', objectFit: 'cover', aspectRatio: '3/4', display: 'block', borderRadius: 'var(--radius-lg)' }} />
-                    </div>
+                    <img src={my_story_1} alt={t('about.tag')} className="about-img" style={{ gridColumn: 'span 4', gridRow: 'span 2', width: '100%', height: '100%', minHeight: '100%', objectFit: 'cover', aspectRatio: '3/4', display: 'block', borderRadius: 'var(--radius-lg)' }} />
 
                     {/* Experience Highlights */}
                     <div className="bento-card" style={{ gridColumn: 'span 4', gridRow: 'span 2', backgroundColor: 'white', display: 'flex', flexDirection: 'column', justifyContent: 'center', gap: '1.5rem' }}>
@@ -59,14 +57,10 @@ const About = () => {
                     </div>
 
                     {/* Image 2 */}
-                    <div className="bento-card" style={{ gridColumn: 'span 4', gridRow: 'span 2', padding: 0, overflow: 'hidden' }}>
-                        <img src={my_story_2} alt={t('about.tag')} style={{ width: '100%', height: '100%', minHeight: '100%', objectFit: 'cover', aspectRatio: '1/1', display: 'block', borderRadius: 'var(--radius-lg)' }} />
-                    </div>
+                    <img src={my_story_2} alt={t('about.tag')} className="about-img" style={{ gridColumn: 'span 4', gridRow: 'span 2', width: '100%', height: '100%', minHeight: '100%', objectFit: 'cover', aspectRatio: '1/1', display: 'block', borderRadius: 'var(--radius-lg)' }} />
 
                     {/* Image 3 */}
-                    <div className="bento-card" style={{ gridColumn: 'span 4', gridRow: 'span 2', padding: 0, overflow: 'hidden' }}>
-                        <img src={my_story_3} alt={t('about.tag')} style={{ width: '100%', height: '100%', minHeight: '100%', objectFit: 'cover', aspectRatio: '1/1', display: 'block', borderRadius: 'var(--radius-lg)' }} />
-                    </div>
+                    <img src={my_story_3} alt={t('about.tag')} className="about-img" style={{ gridColumn: 'span 4', gridRow: 'span 2', width: '100%', height: '100%', minHeight: '100%', objectFit: 'cover', aspectRatio: '1/1', display: 'block', borderRadius: 'var(--radius-lg)' }} />
 
                     {/* Mission Card */}
                     <div className="bento-card mission-card" style={{ gridColumn: 'span 8', gridRow: 'span 1', backgroundColor: 'var(--accent-purple)', color: 'white', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
@@ -96,6 +90,10 @@ const About = () => {
                         grid-column: 1 / -1 !important;
                         grid-row: auto !important;
                         padding: 1.5rem !important;
+                    }
+                    .about-img {
+                        grid-column: 1 / -1 !important;
+                        grid-row: auto !important;
                     }
                     .mission-card, .languages-card {
                         padding: 1.25rem !important;
